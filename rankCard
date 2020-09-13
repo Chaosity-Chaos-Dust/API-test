@@ -8,8 +8,8 @@ var rankCard = new RankCard()
     PreviousLevelXp = 0,
     NextLevelXp = 6918,
     CustomBackgroundUrl = E25B11B8-2DA1-451E-AB28-51B50507F05B.png,
-    IsBoosting = false,
-    XpColorHex = null // Use default progress bar color (#fcba41)
+    IsBoosting = true,
+    XpColorHex = #8013FE
 };
 
 var stream = VACEfronEndpoint.RankCard(rankCard);
