@@ -1,0 +1,17 @@
+var rankCard = new RankCard()
+{
+    Username = "VAC Efron#0001",
+    AvatarUrl = Context.User.GetAvatarUrl(),
+    Level = 5,
+    Rank = 1,
+    CurrentXp = 1878,
+    PreviousLevelXp = 1500,
+    NextLevelXp = 2160,
+    CustomBackgroundUrl = null,
+    IsBoosting = false,
+    XpColorHex = null // Use default progress bar color (#fcba41)
+};
+
+var stream = VACEfronEndpoint.RankCard(rankCard);
+
+await Context.Channel.SendFileAsync(stream, "image.png");
